@@ -18,7 +18,7 @@ exports.deleteMovie = async (movieObj) => {
 
 exports.listMovie = async (movieObj) => {
 	try {
-		const movieList = await Movie.find({});
+		const movieList = await Movie.find({}); // find all
 		console.log(movieList);
 	} catch (error) {
 		console.log(error);
